@@ -1,1 +1,124 @@
-1. BDD Framework
+BDD framework
+-------------
+
+It is a framework designed for working with Agile environments.
+
+TDD approach : Kent Beck while with eXtreme Programming.
+
+Kent Beck + Eric Gama --> Junit API is designed to automate the unit testing process in par with Agile practices.
+
+Agile Model : XP, SCRUM, Kanban, Crystal, sAFe etc.
+
+Customized models that follows the Agile practice.
+
+Iterative and Incremental approach to develop a product.
+
+Conventional models Vs Agile Models.
+
+The Agile models will follow the fixed duration / iteration approach
+Every iteration will have the working software delivered.
+
+12 principle of Agile
+Agile Manifesto
+
+Refer : https://agilemanifesto.org/
+
+PO(Business Representative) + SCRUM Team + SCRUM Master(Mentor / facilitator)
+
+PO(Business Representative) : Collate the information to be developed ans articulate a document Product Backlog : Collection of user stories ( THe requiements to be developed will be written from end user direction. template / format) & Ranking / prioritization of user stories based on its importance.
+
+As a <<user>>, I want to <<Action>>, so that <<Goal>>
+
+Citi bank --> Bank Manager, Bank associate, Customer <<Salary , Current etc.>>
+
+SCRUM Team : Development team : Designer + Developer + Tester : 7+/-2 
+
+SCRUM approach : Iterative and incremental
+
+Every iteration in SCRUM is called as SPRINT : it is a fixed duration. 2-4 weeks.
+
+2 weeks : 14 calendar days
+
+4 non working days ( 2 sat & 2 sun) : 10 Days 
+
+Day 1 : Sprint Planning meeting : 3-4 hours : Whole team (PO + SCRUM Team  SCRUm Master) : SCRUM team will select the prioritized user story will seek the explanation or elloborate the requirements further.
+
+PO is expected to answer / clarify the requirements that are asked by the SCRUM team.
+
+SCRUM will start estimating the size of the story ( HIGH, Moderate, Low) and task planning , Risk involved, are there any dependencies, any constraints
+How big is this user story can this be developed in SPRINT?
+
+Once they decide to develop they will add the user story to a SPRINT Backlog
+
+# velocity : Size of Sprint backlog : # of user stories to be developed within a SPRINT.
+
+
+Day 2 - Day 13 : Product development ; 8 days : SCRUm team to develop the product, : Designing _ Coding _ Testing will be done every day.
+
+Daily stand - up call : Whole team
+
+Every day there is a development and every day there will be testing.
+Developer and tester are day before and day behind.
+
+CICD : Continuous Integration & Continuous Deployment --> Continuous Testing
+
+CICD : Automated approach of integrating, deploying and testing the build everyday.
+
+
+Day 14 : Sprint Review & Sprint Reterospection
+
+ Sprint Review : Performed by PO. To check what is agreed on SPRINT plan meeting is developed or not.
+
+Execute what is developed and approve / reject the product.
+
+
+In conventional models,
+
+Requirements gathered --> Designing --> (coding --> Unit Testing) --> Testing --> UAT --> Deployment --> Release
+
+Development Plan is different from Testing Plan.
+
+TDD : Test Driven Development / Test-First approach : XP
+
+What is the test plan so that the developments can be done accordingly.
+
+Testing first before developement.
+
+<<----------------------- RED Cycle--------------------------------------->
+User stories --> Unit Test cases --> Unit Test Methods(Junit API) --> Execute --> Failed --> Write code --> Execute --> Passed --> Optimization
+-------------<-------- GREEN CYCLE--------------->
+
+Dev+QA+PO --> Common idealogy 
+
+redefined the TDD approach to an ATDD approach
+
+Acceptance Test Driven Development:
+
+user stories --> acceptance criteria --> Unit test methods --> executed --> Test failed --> Coding(develop the feature) --> Executed --> Test passed --> Optimizations.
+
+
+Behaviour Driven Development : Tester to check the behaviour of the product based on the acceptance criteria
+
+user stories --> acceptance criteria --> test methods --> executed --> Coding ( Test the feature) --> Executed --> Test Passed
+
+
+What is acceptance criteria? It is a testable requirement derived from the user stories.
+
+Acceptance Criteria is written in a readable format are step by step instruction that repeats user requirements for positive and negative test conditions.
+
+Acceptance Criteria is written using GHERKINS, Given when then format.
+
+Acceptance criteria is written to cover the functional and non functional requirements of the product under developments.
+
+Acceptance criteria should be written by the PO / QA
+If written by QA it should reviewed and approved by the PO.
+
+Acceptance Criteria is commonly used by the developer for development, Tester for testing and PO for UAT.
+-----------------------------------------------
+
+BDD framework : It is an automated approach to test the product based on acceptance criteria.
+
+1. Write the acceptance criteria : Features : GHERKINS
+2. Create the step definition : Test code : Cucumber + Selenium
+3. Execute the feature againt the code : Junit + TestNG + Cucumber.
+************************************************************************
